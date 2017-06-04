@@ -54,7 +54,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['sass', 'copy']);
+    grunt.registerTask('build', ['spritesheet', 'sass', 'copy']);
     grunt.registerTask('dev', ['build', 'watch']);
     grunt.registerTask('prod', ['shell:clean', 'build']);
 };
