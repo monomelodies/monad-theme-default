@@ -1,10 +1,11 @@
 {
   "name": "monad-theme-default",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Default Monad theme (based on Bootstrap)",
   "files": [
     "dist/**",
-    "assets/**"
+    "assets/**",
+    "sass/**"
   ],
   "directories": {
     "doc": "docs"
