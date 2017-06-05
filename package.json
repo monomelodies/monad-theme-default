@@ -1,6 +1,6 @@
 {
   "name": "monad-theme-default",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Default Monad theme (based on Bootstrap)",
   "files": [
     "dist/**",
@@ -11,10 +11,10 @@
     "doc": "docs"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "ng-lollipop": "^0.2.1"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-coffee": "^1.0.0",
