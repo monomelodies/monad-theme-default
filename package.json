@@ -1,6 +1,6 @@
 {
   "name": "monad-theme-default",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Default Monad theme (based on Bootstrap)",
   "files": [
     "dist/**",
