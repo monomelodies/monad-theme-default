@@ -37,7 +37,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-shell');
     grunt.config('shell', {
-        lib: { command: 'npm run build' },
         clean: { command: 'rm -rf dist/*' }
     });
 
