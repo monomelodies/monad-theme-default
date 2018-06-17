@@ -1,5 +1,4 @@
 
-@import 'compass';
 @import 'partials/variables';
 @import 'partials/flags';
 @import 'partials/crud';
@@ -105,7 +104,7 @@ body {
         }
     }
 #auth {
-    @include border-radius(8px);
+    border-radius: 8px;
     max-width: 400px;
     margin: 0 auto;
     background: $container_bg;
@@ -116,9 +115,6 @@ body {
     }
 [draggable] {
     transition: all .5s ease;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
     /* Required to make elements draggable in old WebKit */
     -khtml-user-drag: element;
