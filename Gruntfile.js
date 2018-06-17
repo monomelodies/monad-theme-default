@@ -35,7 +35,8 @@ module.exports = function (grunt) {
                 processors: [
                     require('autoprefixer')(),
                     require('postcss-preset-env')(),
-                    require('precss')()
+                    require('precss')(),
+                    require('cssnano')()
                 ]
             },
             files: {
