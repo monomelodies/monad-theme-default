@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.config('sass', {
         monad: {
             options: {
@@ -24,7 +24,23 @@ module.exports = function (grunt) {
                 compass: true,
                 sourcemap: 'none'
             },
-            files: {'dist/monad.css': 'sass/style.scss'}
+            files: {'tmp/monad.css': 'sass/style.scss'}
+        }
+    });
+
+    grunt.loadNpmTasks('grunt-postcss');
+    grunt.config('postcss', {
+        monad: {
+            options: {
+                processors: [
+                    require('autoprefixer')(),
+                    require('postcss-preset-env')(),
+                    require('precss')()
+                ]
+            },
+            files: {
+                'dist/monad.css': 'tmp/monad.css'
+            }
         }
     });
 
@@ -53,7 +69,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['spritesheet', 'sass', 'copy']);
+    grunt.registerTask('build', ['spritesheet', 'sass', 'postcss', 'copy']);
     grunt.registerTask('dev', ['build', 'watch']);
     grunt.registerTask('prod', ['shell:clean', 'build']);
 };
