@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bootstrap-sass": "^3.4.1",
+    "font-awesome": "^4.7.0",
     "ng-lollipop": "^0.5.0"
   },
   "devDependencies": {
