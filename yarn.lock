@@ -1677,11 +1677,6 @@ nan@^2.13.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
 
-ng-lollipop@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/ng-lollipop/-/ng-lollipop-0.5.1.tgz#3de442c42b9371ebffd8e70c411da33c290effad"
-  integrity sha512-ij3lQevw51ofQquC7mLdcQA1B4UtzP/eahOGhyyqSoxsxSylbYlQdPnuThT764civQgoKmiH/zckeRHVkBUdXw==
-
 node-gyp@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
