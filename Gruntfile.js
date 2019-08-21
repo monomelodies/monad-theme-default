@@ -1,4 +1,6 @@
 
+const sass = require('node-sass');
+
 module.exports = function (grunt) {
 
     var pkg = grunt.file.readJSON('package.json');
@@ -21,7 +23,7 @@ module.exports = function (grunt) {
         monad: {
             options: {
                 style: 'compressed',
-                compass: true,
+                implementation: sass,
                 sourcemap: 'none'
             },
             files: {'tmp/monad.css': 'sass/style.scss'}
@@ -70,7 +72,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['spritesheet', 'sass', 'postcss', 'copy']);
+    grunt.registerTask('build', ['sass', 'postcss', 'copy']);
     grunt.registerTask('dev', ['build', 'watch']);
     grunt.registerTask('prod', ['shell:clean', 'build']);
 };
