@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-shell');
     grunt.config('shell', {
-        clean: { command: 'rm -rf dist/*' }
+        clean: { command: 'mv dist/assets/i18n.png . && rm -rf dist/* && mkdir dist/assets && mv i18n.png dist/assets/' }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -74,6 +74,6 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['build']);
     grunt.registerTask('build', ['sass', 'postcss', 'copy']);
     grunt.registerTask('dev', ['build', 'watch']);
-    grunt.registerTask('prod', ['shell:clean', 'spritesheet', 'build']);
+    grunt.registerTask('prod', ['shell:clean', 'build']);
 };
 
