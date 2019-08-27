@@ -74,6 +74,6 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['build']);
     grunt.registerTask('build', ['sass', 'postcss', 'copy']);
     grunt.registerTask('dev', ['build', 'watch']);
-    grunt.registerTask('prod', ['shell:clean', 'build']);
+    grunt.registerTask('prod', ['shell:clean', 'spritesheet', 'build']);
 };
 
