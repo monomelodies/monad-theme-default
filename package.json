@@ -4,6 +4,7 @@
   "description": "Default Monad theme (based on Bootstrap)",
   "files": [
     "dist/**/*",
+    "dist/assets/**/*",
     "assets/**",
     "sass/**"
   ],
